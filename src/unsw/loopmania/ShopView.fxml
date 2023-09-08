@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="14.0" layoutY="252.0" prefHeight="534.0" prefWidth="449.0" style="-fx-background-color: #E8E5E1 #E8E5E1;">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <GridPane prefHeight="530.0" prefWidth="410.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox alignment="CENTER" prefHeight="103.0" prefWidth="141.0">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="85.0" onMouseClicked="#populateSwordDetails" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/sword.png" />
+                           </image>
+                        </ImageView>
+                        <Region prefHeight="5.0" prefWidth="143.0" />
+                        <Label fx:id="buySwordPrice" text="50">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="85.0" onMouseClicked="#populateStakeDetails" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/stake.png" />
+                           </image>
+                        </ImageView>
+                        <Region prefHeight="5.0" prefWidth="143.0" />
+                        <Label fx:id="buyStakePrice" text="150">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="85.0" onMouseClicked="#populateStaffDetails" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/staff.png" />
+                           </image>
+                        </ImageView>
+                        <Region prefHeight="5.0" prefWidth="143.0" />
+                        <Label fx:id="buyStaffPrice" text="180">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="85.0" onMouseClicked="#populateHelmetDetails" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/helmet.png" />
+                           </image>
+                        </ImageView>
+                        <Region prefHeight="5.0" prefWidth="143.0" />
+                        <Label fx:id="buyHelmetPrice" text="50">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="85.0" onMouseClicked="#populateShieldDetails" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/shield.png" />
+                           </image>
+                        </ImageView>
+                        <Region prefHeight="5.0" prefWidth="143.0" />
+                        <Label fx:id="buyShieldPrice" text="150">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="85.0" onMouseClicked="#populateArmourDetails" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/armour.png" />
+                           </image>
+                        </ImageView>
+                        <Region prefHeight="5.0" prefWidth="143.0" />
+                        <Label fx:id="buyArmourPrice" text="200">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="85.0" onMouseClicked="#populatePotionDetails" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/potion.png" />
+                           </image>
+                        </ImageView>
+                        <Region prefHeight="5.0" prefWidth="143.0" />
+                        <Label fx:id="buyPotionPrice" text="120">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="85.0" onMouseClicked="#populateOneRingDetails" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/the_one_ring.png" />
+                           </image>
+                        </ImageView>
+                        <Region prefHeight="5.0" prefWidth="143.0" />
+                        <Label fx:id="buyOneRingPrice" text="300">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="103.0" prefWidth="141.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="85.0" onMouseClicked="#populateAndurilSwordDetails" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/anduril_sword.png" />
+                           </image>
+                        </ImageView>
+                        <Region prefHeight="5.0" prefWidth="143.0" />
+                        <Label fx:id="buyAndurilSwordPrice" text="600">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="103.0" prefWidth="141.0" GridPane.rowIndex="3">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="85.0" onMouseClicked="#populateTreeStumpDetails" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/tree_stump.png" />
+                           </image>
+                        </ImageView>
+                        <Region prefHeight="5.0" prefWidth="143.0" />
+                        <Label fx:id="buyTreeStumpPrice" text="600">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="817.0" layoutY="252.0" prefHeight="534.0" prefWidth="449.0" style="-fx-background-color: #E8E5E1 #E8E5E1;">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <HBox alignment="CENTER" maxWidth="435.0" prefHeight="136.0" prefWidth="429.0">
+               <children>
+                  <GridPane fx:id="equippedInventory" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#populateEquippedInventorySellDetails" prefHeight="80.0" prefWidth="320.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+
+                     </children>
+                  </GridPane>
+                  <Region prefHeight="136.0" prefWidth="10.0" />
+                  <ImageView fx:id="doggieCoin" fitHeight="80.0" fitWidth="80.0" onMouseClicked="#populateDoggieCoinDetails" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/doggie_coin.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <GridPane fx:id="unequippedInventory" alignment="CENTER" maxHeight="320.0" maxWidth="320.0" minHeight="320.0" minWidth="320.0" onMouseClicked="#populateUnequippedInventorySellDetails" prefHeight="320.0" prefWidth="320.0">
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <VBox layoutX="471.0" layoutY="252.0" prefHeight="534.0" prefWidth="338.0" style="-fx-background-color: #E8E5E1#E8E5E1;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="88.0" prefWidth="318.0">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="171.0">
+                     <children>
+                        <VBox prefHeight="48.0" prefWidth="180.0">
+                           <children>
+                              <Label fx:id="selectedItemType" minWidth="205.0" prefHeight="60.0" prefWidth="233.0" text="SWORD" wrapText="true">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="156.0">
+                           <children>
+                              <ImageView fitHeight="41.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/gold_pile.png" />
+                                 </image>
+                              </ImageView>
+                              <Region prefHeight="42.0" prefWidth="17.0" />
+                              <Label fx:id="selectedItemPrice" text="50">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Region prefHeight="88.0" prefWidth="12.0" HBox.hgrow="ALWAYS" />
+                  <ImageView fx:id="selectedItemImage" fitHeight="95.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../../images/sword.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="331.0" prefWidth="318.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="318.0">
+                     <children>
+                        <Label text="ATTACK:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Region prefHeight="39.0" prefWidth="38.0" />
+                        <Label fx:id="selectedItemAttack" text="12">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="318.0">
+                     <children>
+                        <Label text="DEFENCE:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Region prefHeight="39.0" prefWidth="38.0" />
+                        <Label fx:id="selectedItemDefence" text="0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="318.0">
+                     <children>
+                        <Label fx:id="quantityLabel" text="QUANTITY:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Region prefHeight="39.0" prefWidth="38.0" />
+                        <Label fx:id="quantityNumber" text="0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="selectedItemDescription" prefHeight="227.0" prefWidth="298.0" text="A standard melee weapon. Increases damage dealt by character." wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets top="20.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="selectedItemAction" mnemonicParsing="false" onAction="#clickShopAction" prefHeight="47.0" prefWidth="83.0" text="BUY">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="14.0" layoutY="14.0" prefHeight="73.0" prefWidth="224.0" style="-fx-background-color: #E8E5E1#E8E5E1;">
+         <children>
+            <ImageView fitHeight="58.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/gold_pile.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region fx:id="characterGoldQuantity" prefHeight="73.0" prefWidth="1.0" HBox.hgrow="ALWAYS" />
+            <Label fx:id="goldLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="41.0" prefWidth="136.0" style="-fx-font-size: 20;" text="200" textAlignment="RIGHT" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets right="10.0" />
+         </opaqueInsets>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="14.0" layoutY="96.0" prefHeight="73.0" prefWidth="320.0" style="-fx-background-color: #E8E5E1#E8E5E1;">
+         <children>
+            <Label text="NEXT SHOP">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefHeight="73.0" prefWidth="40.0" HBox.hgrow="ALWAYS" />
+            <Label fx:id="cycleLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="41.0" prefWidth="122.0" style="-fx-font-size: 20;" text="2 cycle(s)" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets right="10.0" />
+         </opaqueInsets>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="1130.0" layoutY="201.0" prefHeight="51.0" prefWidth="136.0" style="-fx-background-color: #E8E5E1#E8E5E1;">
+         <children>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="89.0" text="SELL" textAlignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="201.0" prefHeight="51.0" prefWidth="136.0" style="-fx-background-color: #E8E5E1#E8E5E1;">
+         <children>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="89.0" text="BUY" textAlignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="startNextLoop" layoutX="1042.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#startNextLoop" prefHeight="66.0" prefWidth="224.0" text="START NEXT LOOP">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+   <padding>
+      <Insets right="10.0" />
+   </padding>
+</AnchorPane>

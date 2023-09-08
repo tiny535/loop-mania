@@ -1,0 +1,9 @@
+*.class
+*.log
+hs_err_pid*
+/bin/
+/lib/
+/build/
+/.gradle/
+/src/unsw/loopmania/ShopApplication.java
+/src/unsw/loopmania/LoopManiaApplicationNoMusic.java
